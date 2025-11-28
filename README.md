@@ -19,6 +19,7 @@
 - **生产模式** (prod): 构建生产版本并启动预览服务器
 
 默认使用开发模式运行。如需指定模式，可以在 PowerShell 中执行：
-.\deploy-and-run.ps1 -Mode prod
 
+```powershell
+.\deploy-and-run.ps1 -Mode prod
 ```
