@@ -246,7 +246,7 @@ const App: React.FC = () => {
         <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-30">
           <button
             onClick={scrollToTop}
-            className={`p-2.5 rounded-full shadow-lg bg-slate-800 border border-slate-700 text-blue-500 hover:bg-slate-700 hover:text-blue-400 transition-all duration-300 transform ${
+            className={`p-2.5 rounded-full shadow-lg bg-slate-800 border border-slate-700 text-blue-500 text-slate-400 hover:bg-slate-700 hover:text-blue-400 text-slate-200 transition-all duration-300 transform ${
               showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
             }`}
             title="回到顶部"
@@ -257,7 +257,7 @@ const App: React.FC = () => {
           
           <button
             onClick={scrollToBottom}
-            className="p-2.5 rounded-full shadow-lg bg-slate-800 border border-slate-700 text-slate-400 hover:bg-slate-700 hover:text-slate-200 transition-colors duration-300"
+            className="p-2.5 rounded-full shadow-lg bg-slate-800 border border-slate-700 text-blue-500 text-slate-400 hover:bg-slate-700 hover:text-blue-400 text-slate-200 transition-colors duration-300"
             title="跳转到底部"
             aria-label="跳转到底部"
           >
