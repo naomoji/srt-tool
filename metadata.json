@@ -1,0 +1,5 @@
+{
+  "name": "SRT字幕格式化工具",
+  "description": "一个本地SRT字幕处理工具，支持导入字幕文件，去除括号标签，合并断句，并进行大小写格式化。",
+  "requestFramePermissions": []
+}
