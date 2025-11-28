@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Windows 一键部署说明
 
-# Run and deploy your AI Studio app
+这个文档介绍了如何在 Windows 系统上一键部署和运行 SRT 工具。
 
-This contains everything you need to run your app locally.
+## 使用 PowerShell 脚本部署（推荐）
 
-View your app in AI Studio: https://ai.studio/apps/drive/1nzVcMcPFwBxYq7gsXv4sfOCWOT-y9JZE
+项目目录中的 `deploy-and-run.ps1` 文件可以一键部署并运行项目：
 
-## Run Locally
+1. 右键点击 `deploy-and-run.ps1` 文件
+2. 选择"使用 PowerShell 运行"即可开始部署
+3. 脚本会自动安装依赖、构建项目，并启动本地服务器
+4. 部署完成后会自动打开默认浏览器访问应用
 
-**Prerequisites:**  Node.js
+### 部署模式说明
 
+脚本支持两种运行模式：
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **开发模式** (dev): 运行开发服务器，支持热重载
+- **生产模式** (prod): 构建生产版本并启动预览服务器
+
+默认使用开发模式运行。如需指定模式，可以在 PowerShell 中执行：
+.\deploy-and-run.ps1 -Mode prod
+
+```
