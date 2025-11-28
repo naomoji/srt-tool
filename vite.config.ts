@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       plugins: [react()],
-      base: './', // 使用相对路径以便在 GitHub Pages 上正确加载资源
+      base: '/srt-tool/', 
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
